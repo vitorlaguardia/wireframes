@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #0077b6, #000);
+    color: #fff;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.status-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.status-monitoring {
+    margin-top: 20px;
+}
+
+.status-monitoring h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-left: 10px;
+}
+
+.bar {
+    width: 30px;
+    background-color: #00f;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.bar span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.chart-legend div {
+    text-align: center;
+    width: 30px;
+}

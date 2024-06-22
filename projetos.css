@@ -1,0 +1,177 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #0078AA;
+    color: white;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.active-projects {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.project-icon {
+    background-color: #ffffff;
+    border: 2px solid #0078AA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.project-details h3 {
+    font-size: 18px;
+    color: #0078AA;
+}
+
+.project-details p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-history {
+    background-color: #E0F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-history .history-item {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.project-history .history-item h3 {
+    font-size: 16px;
+    color: #0078AA;
+}
+
+.project-history .history-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+    
+    .sidebar nav ul li a {
+        font-size: 12px;
+    }
+    
+    .sidebar .logo img {
+        display: none;
+    }
+    
+    .sidebar .menu-icon {
+        display: block;
+    }
+    
+    .project-list, .project-history {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project, .history-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .project-icon, .history-item h3, .history-item p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 50px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .active-projects, .project-history {
+        padding: 15px;
+    }
+}

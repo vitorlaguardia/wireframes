@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #0077b6, #000);
+    color: #fff;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.project-teams {
+    margin-top: 20px;
+}
+
+.team {
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.team-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.team-info h2 {
+    font-size: 18px;
+}
+
+.team-info p {
+    font-size: 14px;
+    color: #777;
+}
